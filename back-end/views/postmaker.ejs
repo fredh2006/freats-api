@@ -1,0 +1,35 @@
+<h1>Add a blog post</h1>
+
+<form action="/addpost" method="POST">
+  <div>
+    <label for="author">Author</label>
+    <input type="text" id="author" name="author" required />
+  </div>
+  <div>
+    <label for="date">Date</label>
+    <input type="date" id="string" name="date" required />
+  </div>
+  <div>
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" required />
+  </div>
+  <div>
+    <label for="images">Images</label>
+    <input type="text" id="images" name="images" required />
+  </div>
+  <div>
+    <label for="time">Time</label>
+    <input type="text" id="time" name="time" required />
+  </div>
+  <div>
+    <label for="firstPara">First Pargraph</label>
+    <textarea type="text" id = "firstPara" name = "firstPara"></textarea>
+  </div>
+  <div>
+    <label for="content">Content</label>
+    <textarea type="text" id = "content" name = "content"></textarea>
+  </div>
+  <button type="submit">Upload</button>
+</form>
+
+<script src="/freats-blog//freats-blog/back-end/server/index.js" type="text/javascript"></script>
