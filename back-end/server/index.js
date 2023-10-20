@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyparser.json());
 app.use(express.urlencoded({ extended: false }))
 app.set('view-engine', 'ejs')
-app.set('views', '../views')
+app.set('views', './views')
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
