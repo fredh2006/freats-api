@@ -4,6 +4,8 @@ const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const db = require('./db');
 const Post = require('./models/Posts')
+const job = require('./cron.js')
+job.start();
 
 const app = express();
 const PORT = process.env.PORT||3000;
@@ -46,7 +48,7 @@ app.post('/addpost', async (req, res)=>{
       } catch (err) {
         res.status(500).send(err.message)
       }
-})
+})  
 
 app.get('/api/posts', async (req, res)=>{
     try{
