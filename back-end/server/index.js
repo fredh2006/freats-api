@@ -4,8 +4,8 @@ const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const db = require('./db');
 const Post = require('./models/Posts')
-const job = require('./cron.js')
-job.start();
+// const job = require('./cron.js')
+// job.start();
 
 const app = express();
 const PORT = process.env.PORT||3000;
