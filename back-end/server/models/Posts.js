@@ -10,6 +10,9 @@ const postSchema = new mongoose.Schema({
   title: {
     type: String,
   },
+  prevImage:{
+    type: String,
+  },
   images:{
     type: String,
   },

@@ -34,6 +34,7 @@ app.post('/addpost', async (req, res)=>{
           author: req.body.author,
           date: req.body.date,
           title: req.body.title,
+          prevImage: req.body.prevImages,
           images: req.body.images,
           firstPara: req.body.firstPara,
           content: req.body.content,
